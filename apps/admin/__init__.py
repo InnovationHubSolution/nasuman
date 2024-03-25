@@ -2,8 +2,11 @@
 
 from flask import Blueprint
 
-blueprint = Blueprint(
-    'admin_blueprint',
+admin_blueprint = Blueprint(
+    'admin',
     __name__,
-    url_prefix=''
+    url_prefix='/admin'
 )
+
+from . import routes  # Import the routes module to register its routes
+

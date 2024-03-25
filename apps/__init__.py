@@ -46,7 +46,8 @@ def configure_database(app):
         db.session.remove()
 
 from apps.authentication.oauth import github_blueprint
-from apps.admin import github_blueprint
+from apps.admin import admin_blueprint
+
 
 def create_app(config):
     app = Flask(__name__)
