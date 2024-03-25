@@ -31,7 +31,7 @@ Migrate(app, db)
 # Initialize Flask-Mail
 mail = Mail()
 
-# Configure email settings
+# Configure email settings/this is will be change once we get our own email
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = 'innovatelhubsolutionltd@gmail.com'
