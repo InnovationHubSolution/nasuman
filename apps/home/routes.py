@@ -1,7 +1,5 @@
 # -*- encoding: utf-8 -*-
-"""
-Copyright (c) 2019 - present AppSeed.us
-"""
+
 from flask import Blueprint, render_template, request, flash, redirect, url_for, jsonify
 from apps.home import blueprint
 from flask import render_template, request
