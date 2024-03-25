@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IHS Nasuman</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .navbar {
+            background-color: rgb(34, 164, 58);
+            /* Green */
+        }
+
+        .navbar .nav-link {
+            color: #ffffff;
+            /* White */
+        }
+
+        .navbar .nav-link:hover {
+            color: #ffc107;
+            /* Yellow */
+        }
+
+        .section-heading {
+            color: #ffc107;
+            /* Yellow */
+        }
+
+        .product-section {
+            background-color: #28a745;
+            /* Green */
+            color: #ffffff;
+            /* White */
+            padding: 20px;
+        }
+
+        .jumbotron {
+            background-color: #ffc107;
+            /* Yellow */
+            color: #ffffff;
+            /* White */
+        }
+
+        .footer {
+            background-color: #28a745;
+            /* Green */
+            color: #ffffff;
+            /* White */
+            padding: 15px;
+        }
+
+        .btn-dark-yellow {
+            background-color: #DAA520;
+            /* Dark Yellow */
+            border-color: #DAA520;
+            /* Dark Yellow */
+            color: #ffffff;
+            /* White */
+        }
+
+        .jumbotron {
+            background-image: url('path/to/your/image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+        }
+
+        .btn-dark-yellow {
+            background-color: #DAA520;
+            /* Dark Yellow */
+            border-color: #DAA520;
+            /* Dark Yellow */
+            color: #ffffff;
+        }
+
+        .btn-dark-yellow:hover {
+            background-color: #B8860B;
+            /* Slightly darker shade of Dark Yellow */
+            border-color: #B8860B;
+            /* Slightly darker shade of Dark Yellow */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Innovatel Hub Solution Ltd</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Dropdown item -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Nasuman
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- Dropdown options -->
+                        <a class="nav-link" href="{{ url_for('authentication_blueprint.register') }}">Create New
+                            Group</a>
+                        <a class="nav-link" href="{{ url_for('authentication_blueprint.login') }}">Login</a>
+                        <a class="nav-link" href="{{ url_for('authentication_blueprint.login') }}">Support</a>
+                    </div>
+                </li>
+                <!-- Dropdown item -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Kava cashier Solution
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- Dropdown options -->
+                        <a class="nav-link" href="{{ url_for('authentication_blueprint.register') }}">Create New
+                            Group</a>
+                        <a class="nav-link" href="{{ url_for('authentication_blueprint.login') }}">Login</a>
+                        <a class="nav-link" href="{{ url_for('authentication_blueprint.login') }}">Support</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Constuctions</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Consultant</a>
+
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron text-center" style="background-image: url('{{ url_for('static', filename='assets/img/backtop.png') }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;">
+        <h1 class="display-4">Welcome to Innovatel Hub Solution Ltd</h1>
+        <p class="lead">Your one-stop solution for saving and managing your finances with ease.</p>
+        <a type="button" class="btn btn-primary" href="{{ url_for('authentication_blueprint.register') }}"
+            class="fw-bold text-right">
+            Create New Group
+        </a>
+    </div>
+
+
+    <div class="container mt-5">
+        <h2 class="section-heading">About Innovatel Hub Solution Ltd</h2>
+        <p>Innovatel Hub Solution is a cutting-edge financial management platform designed to help you track your
+            expenses, set
+            budgets, and achieve your financial goals. With our intuitive interface and powerful features, you can
+            easily manage your finances, whether you're saving for a vacation, planning for retirement, or simply
+            keeping track of your daily expenses.</p>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="section-heading">Why Choose Innovatel Hub Solution Ltd?</h2>
+        <ul>
+            <li>Easy to Use: </li>
+            <li>Local nivan: </li>
+            <li>Secure: </li>
+            <li>Support:</li>
+        </ul>
+    </div>
+
+    <!-- Version Section -->
+    <div class="container mt-5">
+        <h2 class="section-heading">Vision</h2>
+        <p>Innovatel Hub Solutions Ltd represents a dynamic and forward-thinking company that focuses on providing
+            innovative solutions. The name suggests a hub or central point for creativity, collaboration, and
+            cutting-edge ideas. This business likely specializes in offering creative and adaptable solutions across
+            various industries, fostering innovation as a core value.</p>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="section-heading text-center">Our Plans</h2>
+        <div class="row">
+            <!-- Plan 1: 10,000 VT for 1 - 50 Members -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Starter</h5>
+                        <p class="card-text">10,000 VT</p>
+                        <p class="card-text">1 - 50 Members</p>
+                        <p></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plan 2: 20,000 VT for 1 - 100 Members -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pro</h5>
+                        <p class="card-text">20,000 VT</p>
+                        <p class="card-text">1 - 100 Members</p>
+                        <p></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Plans -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Plans</h5>
+                        <p class="card-text">Tailored to your needs</p>
+                        <p>Send your request to support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Version Section -->
+    <div class="container mt-5">
+        <h2 class="section-heading">How to use</h2>
+        <p>Create your group, get a confirmation email once your group is activated, you can login in customer portal
+            and start purching your plan and start creating your members</p>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="createGroupModal" tabindex="-1" role="dialog" aria-labelledby="createGroupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createGroupModalLabel">Create New Group</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/create_group" method="post">
+                        <div class="form-group">
+                            <label for="groupName">Group Name</label>
+                            <input type="text" class="form-control" id="groupName" name="groupName"
+                                placeholder="Enter group name">
+                        </div>
+                        <div class="form-group">
+                            <label for="adminName">Admin Name</label>
+                            <input type="text" class="form-control" id="adminName" name="adminName"
+                                placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="island">Island</label>
+                            <input type="text" class="form-control" id="island" name="island"
+                                placeholder="Enter island">
+                        </div>
+                        <div class="form-group">
+                            <label for="village">Village</label>
+                            <input type="text" class="form-control" id="village" name="village"
+                                placeholder="Enter village">
+                        </div>
+                        <div class="form-group">
+                            <label for="adminPassword">Admin Password</label>
+                            <input type="password" class="form-control" id="adminPassword" name="adminPassword"
+                                placeholder="Enter admin password">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
+                                placeholder="Confirm admin password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Group</button>
+                        <div id="error_message" class="alert alert-danger" role="alert" style="display: none;"></div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>Innovatel Hub Solution Ltd is a financial management platform designed to help you track your
+                        expenses, set
+                        budgets, and achieve your financial goals.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: support@Innovatelhubsolution.com</p>
+                    <p>Phone: +6783224</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">Twitter</a><br>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+        // Function to show the modal with error message
+        function showErrorModal(message) {
+            $('#error_message').text(message).show();
+            $('#createGroupModal').modal('show');
+        }
+
+        // Function to handle form submission
+        $(document).ready(function () {
+            $('form').submit(function (e) {
+                e.preventDefault(); // Prevent the default form submission
+
+                // Serialize form data
+                const formData = new FormData(this);
+
+                // Perform AJAX request using fetch API
+                fetch($(this).attr('action'), {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(responseJson => {
+                        // Check if the response contains an error
+                        if (responseJson.error) {
+                            // Handle error response
+                            showErrorModal(responseJson.error);
+                        } else if (responseJson.success) {
+                            // Hide the modal on success
+                            $('#createGroupModal').modal('hide');
+                            // Show success message (if needed)
+                            console.log(responseJson.success);
+                        }
+                    })
+                    .catch(error => {
+                        // Handle other errors
+                        showErrorModal(error.message);
+                    });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

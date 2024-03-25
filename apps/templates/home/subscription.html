@@ -1,0 +1,45 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Subscription {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="container">
+    <h2 class="text-center">Choose a Subscription Plan</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Plan 1 - 50 members - 3000vt
+                </div>
+                <div class="card-body">
+                    <form action="/subscribe" method="post">
+                        <input type="hidden" name="plan_id" value="1">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Plan 2 - 100 members - 5000vt
+                </div>
+                <div class="card-body">
+                    <form action="/subscribe" method="post">
+                        <input type="hidden" name="plan_id" value="2">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
