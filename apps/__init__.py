@@ -18,7 +18,7 @@ def register_extensions(app):
 
 
 def register_blueprints(app):
-    for module_name in ('authentication', 'home'):
+    for module_name in ('authentication', 'home', 'admin'):
         module = import_module('apps.{}.routes'.format(module_name))
         app.register_blueprint(module.blueprint)
 
@@ -46,6 +46,7 @@ def configure_database(app):
         db.session.remove()
 
 from apps.authentication.oauth import github_blueprint
+from apps.admin import github_blueprint
 
 def create_app(config):
     app = Flask(__name__)
@@ -53,7 +54,8 @@ def create_app(config):
     register_extensions(app)
 
     app.register_blueprint(github_blueprint, url_prefix="/")
-    app.register_blueprint(github_blueprint, url_prefix="/admin")
+    app.register_blueprint(admin_blueprint, url_prefix="/admin")
+
     
     register_blueprints(app)
     configure_database(app)
