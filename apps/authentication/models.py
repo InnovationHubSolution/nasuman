@@ -8,22 +8,14 @@ import secrets
 from datetime import datetime, timedelta
 from werkzeug.security import generate_password_hash
 
-class Administrator(db.Model, UserMixin):
-    __tablename__   = 'Administrator'
-    id              = db.Column(db.Integer, primary_key=True)
-    username        = db.Column(db.String(64), unique=True)
-    full_name       = db.Column(db.String(64), unique=True)
-    email           = db.Column(db.String(64), unique=True)
-    password        = db.Column(db.String(64))
-    phone           = db.Column(db.String(15), nullable=True)
-    address         = db.Column(db.String(255), nullable=True)
-    province        = db.Column(db.String(100), nullable=True)
-    profile_image   = db.Column(db.String(64), unique=True)
-    cover_image     = db.Column(db.String(64), unique=True)
-    role            = db.Column(db.String(64), unique=True)
+class Admin(db.Model, UserMixin):
+    id=db.Column(db.Integer, primary_key=True)
+    username=db.Column(db.String(255), nullable=False)
+    password=db.Column(db.String(255), nullable=False)
 
     def __repr__(self):
-        return str(self.username)
+        return f'Admin("{self.username}","{self.id}")'
+
 
 class Users(db.Model, UserMixin):
     __tablename__   = 'Users'
